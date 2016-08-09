@@ -1,0 +1,22 @@
+// Pagination variants
+
+.pagination-variant(@color) {
+  > li {
+    > a, > span {
+      &:focus, &:hover {
+        color:darken( @color, 5%);
+      }
+      color: @color;
+    }
+    > .active {
+      > a, > span {
+        &:focus, &:hover {
+          background-color: @color;
+          border-color: @color;
+        }
+        background-color: @color;
+        border-color: @color;
+      }
+    }
+  }
+} 
